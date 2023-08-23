@@ -47,7 +47,7 @@ export default function CreateNFT() {
   return (
     <>
       <NextSeo
-        title="Create NFT"
+        title="Launch"
         description="GPU-Enabled Jupyter Notebook Deployment Platform"
       />
       <div className="mx-auto w-full sm:pt-0 lg:px-8 xl:px-10 2xl:px-0">
@@ -61,19 +61,7 @@ export default function CreateNFT() {
               <InputLabel title="Upload file" important />
               <Uploader />
             </div>
-
-            {/* NFT preview */}
-            <InputLabel title="Preview" />
-            <div className="relative flex flex-grow flex-col overflow-hidden rounded-lg bg-white shadow-card transition-all duration-200 hover:shadow-large dark:bg-light-dark">
-              <div className="flex items-center p-4 text-sm font-medium text-gray-600 transition hover:text-gray-900 dark:text-gray-400">
-                <Avatar
-                  size="sm"
-                  image={AuthorImage}
-                  alt="NateBolam"
-                  className="border-white bg-gray-300 ltr:mr-3 rtl:ml-3 dark:bg-gray-400"
-                />
-                @NateBolam
-              </div>
+            
               <div className="relative block w-full pb-full">
                 <Image
                   src={NFT1}
