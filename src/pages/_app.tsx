@@ -29,14 +29,20 @@ function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
           name="viewport"
           content="width=device-width, initial-scale=1 maximum-scale=1"
         />
-        <title>GPU-Enabled Jupyter Notebook Deployment Platform</title>
+        <title>Criptic - React Next Web3 NFT Crypto Dashboard Template</title>
       </Head>
       <ThemeProvider
         attribute="class"
         enableSystem={false}
-        defaultTheme="dark"
+        defaultTheme="light"
       >
-
+        <WalletProvider>
+          {getLayout(<Component {...pageProps} />)}
+          <SettingsButton />
+          <SettingsDrawer />
+          <ModalsContainer />
+          <DrawersContainer />
+        </WalletProvider>
       </ThemeProvider>
     </>
   );
