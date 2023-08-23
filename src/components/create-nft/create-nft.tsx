@@ -44,6 +44,11 @@ export default function CreateNFT() {
   let [unlocked, setUnlocked] = useState(false);
   let [priceType, setPriceType] = useState('fixed');
   let [blockchain, setBlockChain] = useState(BlockchainOptions[0]);
+  let [cpus, setCPUs] = useState('');
+  let [ram, setRAM] = useState('');
+  let [storage, setStorage] = useState('');
+  let [selectedRegion, setSelectedRegion] = useState('');
+
   return (
     <>
       <NextSeo
@@ -61,23 +66,6 @@ export default function CreateNFT() {
               <InputLabel title="Upload file" important />
               <Uploader />
             </div>
-            
-              <div className="relative block w-full pb-full">
-                <Image
-                  src={NFT1}
-                  placeholder="blur"
-                  layout="fill"
-                  objectFit="cover"
-                  alt="Quantum Computing Simulations"
-                />
-              </div>
-              <div className="p-5">
-                <div className="text-sm font-medium text-black dark:text-white">
-                Quantum Computing Simulations
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Price */}
