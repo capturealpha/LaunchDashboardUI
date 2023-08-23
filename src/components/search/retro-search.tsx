@@ -79,7 +79,7 @@ export default function RetroSearch() {
       <div className="grid sm:pt-5">
         <div className="relative z-10 mb-6 flex items-center justify-between">
           <span className="text-xs font-medium text-gray-900 dark:text-white sm:text-sm">
-            5,686,066 items
+            8 Deployments
           </span>
           <div className="flex gap-6 3xl:gap-8">
             <SortList />

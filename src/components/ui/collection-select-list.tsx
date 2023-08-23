@@ -10,28 +10,18 @@ import CollectionImage4 from '@/assets/images/collection/collection-4.jpg';
 export const collectionList = [
   {
     icon: CollectionImage1,
-    name: 'Iron flower',
+    name: 'Deep Learning for Image Recognition',
     value: 'iron-flower',
   },
   {
     icon: CollectionImage2,
-    name: 'Creative web',
+    name: 'Text Sentiment Analysis',
     value: 'creative-web',
   },
   {
     icon: CollectionImage3,
-    name: 'Art in binary',
+    name: ' Climate Change Predictions',
     value: 'art-in-binary',
-  },
-  {
-    icon: CollectionImage4,
-    name: 'Sound of wave',
-    value: 'sound-of-wave',
-  },
-  {
-    icon: CollectionImage2,
-    name: 'Pixel art',
-    value: 'pixel-art',
   },
 ];
 
