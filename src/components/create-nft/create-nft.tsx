@@ -52,7 +52,7 @@ export default function CreateNFT() {
       />
       <div className="mx-auto w-full sm:pt-0 lg:px-8 xl:px-10 2xl:px-0">
         <h2 className="mb-6 text-lg font-medium uppercase tracking-wider text-gray-900 dark:text-white sm:mb-10 sm:text-2xl">
-          Create New Item
+          Create New Deployment
         </h2>
         <div className="mb-8 grid grid-cols-1 gap-12 lg:grid-cols-3">
           <div className="lg:col-span-2">
@@ -62,36 +62,6 @@ export default function CreateNFT() {
               <Uploader />
             </div>
 
-            {/* NFT price type */}
-            <div className="flex items-center justify-between gap-4">
-              <InputLabel
-                title="Put on marketplace"
-                subTitle="Enter price to allow users instantly purchase your NFT"
-              />
-              <div className="shrink-0">
-                <Switch checked={publish} onChange={() => setPublish(!publish)}>
-                  <div
-                    className={cn(
-                      publish ? 'bg-brand' : 'bg-gray-200 dark:bg-gray-700',
-                      'relative inline-flex h-[22px] w-10 items-center rounded-full transition-colors duration-300'
-                    )}
-                  >
-                    <span
-                      className={cn(
-                        publish
-                          ? 'bg-white ltr:translate-x-5 rtl:-translate-x-5 dark:bg-light-dark'
-                          : 'bg-white ltr:translate-x-0.5 rtl:-translate-x-0.5 dark:bg-light-dark',
-                        'inline-block h-[18px] w-[18px] transform rounded-full bg-white transition-transform duration-200'
-                      )}
-                    />
-                  </div>
-                </Switch>
-              </div>
-            </div>
-            {publish && <PriceType value={priceType} onChange={setPriceType} />}
-          </div>
-
-          <div className="hidden flex-col lg:flex">
             {/* NFT preview */}
             <InputLabel title="Preview" />
             <div className="relative flex flex-grow flex-col overflow-hidden rounded-lg bg-white shadow-card transition-all duration-200 hover:shadow-large dark:bg-light-dark">
@@ -110,15 +80,12 @@ export default function CreateNFT() {
                   placeholder="blur"
                   layout="fill"
                   objectFit="cover"
-                  alt="Pulses of Imagination #214"
+                  alt="Quantum Computing Simulations"
                 />
               </div>
               <div className="p-5">
                 <div className="text-sm font-medium text-black dark:text-white">
-                  Pulses Of Imagination #214
-                </div>
-                <div className="mt-4 text-lg font-medium text-gray-900 dark:text-white">
-                  0.40 ETH
+                Quantum Computing Simulations
                 </div>
               </div>
             </div>
@@ -127,11 +94,11 @@ export default function CreateNFT() {
 
         {/* Price */}
         <div className="mb-8">
-          <InputLabel title="Price" important />
+          <InputLabel title="Price Range" important />
           <Input
             min={0}
             type="number"
-            placeholder="Enter your price"
+            placeholder="Enter your price range"
             inputClassName="spin-button-hidden"
           />
         </div>
@@ -142,23 +109,20 @@ export default function CreateNFT() {
           <Input type="text" placeholder="Item name" />
         </div>
 
-        {/* External link */}
-        <div className="mb-8">
-          <InputLabel
-            title="External link"
-            subTitle="We will include a link to this URL on this item's detail page, so that users can click to learn more about it."
-          />
-          <Input type="text" placeholder="https://yoursite.io/item/123" />
-        </div>
-
         {/* Description */}
         <div className="mb-8">
           <InputLabel
             title="Description"
-            subTitle="The description will be included on the item's detail page underneath its image."
+            subTitle="The description will be included on the deployment's detail page."
           />
-          <Textarea placeholder="Provide a detailed description of your item" />
+          <Textarea placeholder="Provide a detailed description of your deployment" />
         </div>
+
+        <div className="mb-4">
+  <InputLabel title="CPUs" important />
+  <Input type="number" placeholder="Enter number of CPUs" onChange={(e) => setCPUs(e.target.value)} />
+</div>
+
 
         {/* Unlockable content */}
         <div className="mb-3">

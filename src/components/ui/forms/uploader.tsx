@@ -50,7 +50,7 @@ function Uploader() {
         ) : (
           <div className="text-center">
             <p className="mb-6 text-sm tracking-tighter text-gray-600 dark:text-gray-400">
-              PNG, GIF, WEBP, MP4 or MP3. Max 100mb.
+            IPYNB Files
             </p>
             <Button>CHOOSE FILE</Button>
           </div>
