@@ -43,14 +43,14 @@ export default function CreateNFTRetro() {
   return (
     <>
       <NextSeo
-        title="Create NFT"
-        description="Criptic - React Next Web3 NFT Crypto Dashboard Template"
+        title="Create Deployment"
+        description="Launch - GPU-Enabled Jupyter Notebook Deployment Platform"
       />
       <form>
         <div className="mx-auto w-full pt-8 sm:pt-12 lg:px-8 xl:px-10 2xl:px-0">
           <div className="flex items-center justify-between">
             <h2 className="text-lg font-medium uppercase tracking-wider text-gray-900 dark:text-white sm:text-2xl">
-              Create New Item
+              Create New Deployment
             </h2>
             <Preview />
           </div>

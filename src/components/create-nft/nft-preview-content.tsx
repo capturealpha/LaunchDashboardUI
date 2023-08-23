@@ -12,10 +12,10 @@ export default function PreviewContent() {
           <Avatar
             size="sm"
             image={AuthorImage}
-            alt="Cameronwilliamson"
+            alt="NateBolam"
             className="border-white bg-gray-300 ltr:mr-3 rtl:ml-3 dark:bg-gray-400"
           />
-          @Cameronwilliamson
+          @NateBolam
         </div>
         <div className="relative block w-full pb-full">
           <Image
