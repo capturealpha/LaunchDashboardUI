@@ -47,7 +47,7 @@ export default function CreateNFT() {
   return (
     <>
       <NextSeo
-        title="Create NFT"
+        title="Launch"
         description="GPU-Enabled Jupyter Notebook Deployment Platform"
       />
       <div className="mx-auto w-full sm:pt-0 lg:px-8 xl:px-10 2xl:px-0">
@@ -61,36 +61,6 @@ export default function CreateNFT() {
               <InputLabel title="Upload file" important />
               <Uploader />
             </div>
-
-            {/* NFT preview */}
-            <InputLabel title="Preview" />
-            <div className="relative flex flex-grow flex-col overflow-hidden rounded-lg bg-white shadow-card transition-all duration-200 hover:shadow-large dark:bg-light-dark">
-              <div className="flex items-center p-4 text-sm font-medium text-gray-600 transition hover:text-gray-900 dark:text-gray-400">
-                <Avatar
-                  size="sm"
-                  image={AuthorImage}
-                  alt="NateBolam"
-                  className="border-white bg-gray-300 ltr:mr-3 rtl:ml-3 dark:bg-gray-400"
-                />
-                @NateBolam
-              </div>
-              <div className="relative block w-full pb-full">
-                <Image
-                  src={NFT1}
-                  placeholder="blur"
-                  layout="fill"
-                  objectFit="cover"
-                  alt="Quantum Computing Simulations"
-                />
-              </div>
-              <div className="p-5">
-                <div className="text-sm font-medium text-black dark:text-white">
-                Quantum Computing Simulations
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Price */}
         <div className="mb-8">
@@ -123,41 +93,35 @@ export default function CreateNFT() {
   <Input type="number" placeholder="Enter number of CPUs" onChange={(e) => setCPUs(e.target.value)} />
 </div>
 
+<div className="mb-4">
+  <InputLabel title="RAM" important />
+  <div className="flex items-center space-x-2">
+    <Input type="number" placeholder="Enter RAM" onChange={(e) => setRAM(e.target.value)} />
+    <Dropdown options={['GB', 'MB']} selectedOption={selectedRAMUnit} onSelect={handleRAMUnitSelect} />
+  </div>
+</div>
 
-        {/* Unlockable content */}
-        <div className="mb-3">
-          <ToggleBar
-            title="Unlockable Content"
-            subTitle="Include unlockable content that can only be revealed by the owner of the item."
-            icon={<Unlocked />}
-            checked={unlocked}
-            onChange={() => setUnlocked(!unlocked)}
-          >
-            {unlocked && (
-              <Textarea placeholder="Enter content (access key, code to redeem, link to a file, etc.)" />
-            )}
-          </ToggleBar>
-        </div>
+<div className="mb-4">
+  <InputLabel title="Storage" important />
+  <div className="flex items-center space-x-2">
+    <Input type="number" placeholder="Enter storage" onChange={(e) => setStorage(e.target.value)} />
+    <Dropdown options={['GB', 'TB']} selectedOption={selectedStorageUnit} onSelect={handleStorageUnitSelect} />
+  </div>
+</div>
 
-        {/* Explicit content */}
-        <div className="mb-8">
-          <ToggleBar
-            title="Explicit &amp; Sensitive Content"
-            subTitle="Set this item as explicit and sensitive content"
-            icon={<Warning />}
-            checked={explicit}
-            onChange={() => setExplicit(!explicit)}
-          />
-        </div>
+<div className="mb-4">
+  <InputLabel title="Storage" important />
+  <div className="flex items-center space-x-2">
+    <Input type="number" placeholder="Enter storage" onChange={(e) => setStorage(e.target.value)} />
+    <Dropdown options={['GB', 'TB']} selectedOption={selectedStorageUnit} onSelect={handleStorageUnitSelect} />
+  </div>
+</div>
 
-        {/* Supply */}
-        <div className="mb-8">
-          <InputLabel
-            title="Supply"
-            subTitle="The number of items that can be minted."
-          />
-          <Input type="number" placeholder="1" disabled />
-        </div>
+<div className="mb-4">
+  <InputLabel title="Region" important />
+  <Dropdown options={['Region A', 'Region B', 'Region C']} selectedOption={selectedRegion} onSelect={handleRegionSelect} />
+</div>
+
 
         {/* Blockchain */}
         <div className="mb-8">
