@@ -12,7 +12,7 @@ import Avatar7 from '@/assets/images/avatar/7.png';
 
 export const nftData = {
   isAuction: true,
-  name: 'Flow Punk Gallery #303',
+  name: 'Quantum Computing Simulations',
   image: SingleNft,
   minted_date: 'Jan 26, 2022',
   minted_slug: 'https://etherscan.io/',

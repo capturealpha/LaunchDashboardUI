@@ -111,7 +111,7 @@ export default function CreateNFT() {
 
         {/* Blockchain */}
         <div className="mb-8">
-          <InputLabel title="Blockchain" />
+          <InputLabel title="Region" />
           <div className="relative">
             <Listbox value={blockchain} onChange={setBlockChain}>
               <Listbox.Button className="text-case-inherit letter-space-inherit flex h-10 w-full items-center justify-between rounded-lg border border-gray-200 bg-white px-4 text-sm font-medium text-gray-900 outline-none transition-shadow duration-200 hover:border-gray-900 hover:ring-1 hover:ring-gray-900 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100 dark:hover:border-gray-600 dark:hover:ring-gray-600 sm:h-12 sm:px-5">

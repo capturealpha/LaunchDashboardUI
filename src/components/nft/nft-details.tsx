@@ -77,8 +77,7 @@ export default function NftDetails({ product }: { product: NftDetailsProps }) {
                 href={minted_slug}
                 className="mt-1.5 inline-flex items-center text-sm -tracking-wider text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white xl:mt-2.5"
               >
-                Minted on {minted_date}
-                <ArrowLinkIcon className="h-3 w-3 ltr:ml-2 rtl:mr-2" />
+                Deployed on {minted_date}
               </AnchorLink>
               <div className="mt-4 flex flex-wrap gap-6 pt-0.5 lg:-mx-6 lg:mt-6 lg:gap-0">
                 <div className="shrink-0 border-dashed border-gray-200 dark:border-gray-700 lg:px-6 lg:ltr:border-r lg:rtl:border-l">
@@ -111,14 +110,6 @@ export default function NftDetails({ product }: { product: NftDetailsProps }) {
                   {
                     title: 'Details',
                     path: 'details',
-                  },
-                  {
-                    title: 'Bids',
-                    path: 'bids',
-                  },
-                  {
-                    title: 'History',
-                    path: 'history',
                   },
                 ]}
               >
