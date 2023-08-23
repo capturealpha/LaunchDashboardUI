@@ -34,7 +34,7 @@ export default function MinimalScreen() {
     <>
       <NextSeo
         title="Criptic Minimal"
-        description="Criptic - React Next Web3 NFT Crypto Dashboard Template"
+        description="GPU-Enabled Jupyter Notebook Deployment Platform"
       />
       <div className="mt-8">
         <PriceFeedSlider

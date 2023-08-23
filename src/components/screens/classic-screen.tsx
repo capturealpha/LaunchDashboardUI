@@ -18,7 +18,7 @@ export default function ClassicScreen() {
     <>
       <NextSeo
         title="Criptic Classic Demo"
-        description="Criptic - React Next Web3 NFT Crypto Dashboard Template"
+        description="GPU-Enabled Jupyter Notebook Deployment Platform"
       />
       <div className="flex flex-wrap">
         <div className="mb-8 w-full sm:mb-0  ">

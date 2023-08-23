@@ -23,8 +23,8 @@ const SearchPage: NextPageWithLayout<
     return (
       <>
         <NextSeo
-          title="Explore NTF"
-          description="Criptic - React Next Web3 NFT Crypto Dashboard Template"
+          title="Launch"
+          description="GPU-Enabled Jupyter Notebook Deployment Platform"
         />
         <RetroSearch />
       </>
@@ -35,8 +35,8 @@ const SearchPage: NextPageWithLayout<
   return (
     <>
       <NextSeo
-        title="Explore NTF"
-        description="Criptic - React Next Web3 NFT Crypto Dashboard Template"
+        title="Launch"
+        description="GPU-Enabled Jupyter Notebook Deployment Platform"
       />
 
       <Search />

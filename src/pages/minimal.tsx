@@ -49,7 +49,7 @@ const Index2: NextPageWithLayout<
     <>
       <NextSeo
         title="Criptic Minimal"
-        description="Criptic - React Next Web3 NFT Crypto Dashboard Template"
+        description="GPU-Enabled Jupyter Notebook Deployment Platform"
       />
       <div className="mt-8 gap-6 px-4 sm:px-6 lg:px-8 xl:px-10 3xl:px-12">
         <PriceFeedSlider

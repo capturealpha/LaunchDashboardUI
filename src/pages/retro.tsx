@@ -23,7 +23,7 @@ const Retro: NextPageWithLayout<
     <>
       <NextSeo
         title="Criptic - Retro"
-        description="Criptic - React Next Web3 NFT Crypto Dashboard Template"
+        description="GPU-Enabled Jupyter Notebook Deployment Platform"
       />
       <div className="retro-container">
         <div>

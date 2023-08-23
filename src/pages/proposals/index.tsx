@@ -85,7 +85,7 @@ const ProposalsPage: NextPageWithLayout = () => {
     <>
       <NextSeo
         title="Proposal"
-        description="Criptic - React Next Web3 NFT Crypto Dashboard Template"
+        description="GPU-Enabled Jupyter Notebook Deployment Platform"
       />
       <section className="mx-auto w-full max-w-[1160px] text-sm sm:pt-10 4xl:pt-14">
         <header
