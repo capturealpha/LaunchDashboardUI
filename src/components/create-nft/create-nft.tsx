@@ -44,6 +44,9 @@ export default function CreateNFT() {
   let [unlocked, setUnlocked] = useState(false);
   let [priceType, setPriceType] = useState('fixed');
   let [blockchain, setBlockChain] = useState(BlockchainOptions[0]);
+  let [cpus, setCPUs] = useState('');
+  let [ram, setRAM] = useState('');
+  let [storage, setStorage] = useState(''); 
   return (
     <>
       <NextSeo
@@ -78,7 +81,7 @@ export default function CreateNFT() {
         {/* Name */}
         <div className="mb-8">
           <InputLabel title="Name" important />
-          <Input type="text" placeholder="Item name" />
+          <Input type="text" placeholder="Deployment name" />
         </div>
 
         {/* Description */}
@@ -95,41 +98,18 @@ export default function CreateNFT() {
   <Input type="number" placeholder="Enter number of CPUs" onChange={(e) => setCPUs(e.target.value)} />
 </div>
 
+  {/* RAM */}
+  <div className="mb-4">
+        <InputLabel title="RAM" important />
+        <Input type="number" placeholder="Enter RAM" onChange={(e) => setRAM(e.target.value)} />
+      </div>
 
-        {/* Unlockable content */}
-        <div className="mb-3">
-          <ToggleBar
-            title="Unlockable Content"
-            subTitle="Include unlockable content that can only be revealed by the owner of the item."
-            icon={<Unlocked />}
-            checked={unlocked}
-            onChange={() => setUnlocked(!unlocked)}
-          >
-            {unlocked && (
-              <Textarea placeholder="Enter content (access key, code to redeem, link to a file, etc.)" />
-            )}
-          </ToggleBar>
-        </div>
+        {/* Storage */}
+        <div className="mb-4">
+        <InputLabel title="Storage" important />
+        <Input type="number" placeholder="Enter storage" onChange={(e) => setStorage(e.target.value)} />
+      </div>
 
-        {/* Explicit content */}
-        <div className="mb-8">
-          <ToggleBar
-            title="Explicit &amp; Sensitive Content"
-            subTitle="Set this item as explicit and sensitive content"
-            icon={<Warning />}
-            checked={explicit}
-            onChange={() => setExplicit(!explicit)}
-          />
-        </div>
-
-        {/* Supply */}
-        <div className="mb-8">
-          <InputLabel
-            title="Supply"
-            subTitle="The number of items that can be minted."
-          />
-          <Input type="number" placeholder="1" disabled />
-        </div>
 
         {/* Blockchain */}
         <div className="mb-8">
@@ -160,7 +140,6 @@ export default function CreateNFT() {
                           }`}
                         >
                           <span className="ltr:mr-2 rtl:ml-2">
-                            {option.icon}
                           </span>
                           {option.name}
                         </div>

@@ -50,7 +50,7 @@ function Uploader() {
         ) : (
           <div className="text-center">
             <p className="mb-6 text-sm tracking-tighter text-gray-600 dark:text-gray-400">
-            IPYNB Files
+            .ipynb Files
             </p>
             <Button>CHOOSE FILE</Button>
           </div>
