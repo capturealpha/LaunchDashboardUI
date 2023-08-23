@@ -68,5 +68,5 @@ export const NFTList = [
     image: NFT1,
     name: 'Genomic Sequencing Analysis',
     collection: 'Data Analysis',
-  },
+  }
 ];

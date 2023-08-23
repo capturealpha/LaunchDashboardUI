@@ -27,12 +27,7 @@ export const collectionList = [
     icon: CollectionImage4,
     name: 'Environmental Analysis',
     value: 'art-in-binary',
-  },
-  {
-    icon: CollectionImage5,
-    name: 'Machine Learning',
-    value: 'art-in-binary',
-  },
+  }
 ];
 
 interface CollectionSelectTypes {
