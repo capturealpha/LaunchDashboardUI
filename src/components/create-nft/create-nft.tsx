@@ -90,15 +90,27 @@ export default function CreateNFT() {
               <Input type="number" placeholder="Enter number of CPUs" onChange={(e) => setCPUs(e.target.value)} />
             </div>
 
-            {/* ... Other fields ... */}
+            <div className="mb-4">
+  <InputLabel title="RAM" important />
+  <div className="flex items-center space-x-2">
+    <Input type="number" placeholder="Enter RAM" onChange={(e) => setRAM(e.target.value)} />
+    <Dropdown options={['GB', 'MB']} selectedOption={selectedRAMUnit} onSelect={handleRAMUnitSelect} />
+  </div>
+</div>
 
-          </div> {/* Close lg:col-span-2 */}
-          
-          {/* ... Other sections ... */}
+<div className="mb-4">
+  <InputLabel title="Storage" important />
+  <div className="flex items-center space-x-2">
+    <Input type="number" placeholder="Enter storage" onChange={(e) => setStorage(e.target.value)} />
+    <Dropdown options={['GB', 'TB']} selectedOption={selectedStorageUnit} onSelect={handleStorageUnitSelect} />
+  </div>
+</div>
 
-        </div> {/* Close grid-cols-1 */}
-        
-        {/* ... Other fields ... */}
+<div className="mb-4">
+  <InputLabel title="Region" important />
+  <Dropdown options={['Region A', 'Region B', 'Region C']} selectedOption={selectedRegion} onSelect={handleRegionSelect} />
+</div>
+
 
         <Button shape="rounded">CREATE</Button>
       </div>
