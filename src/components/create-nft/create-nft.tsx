@@ -23,18 +23,16 @@ import AuthorImage from '@/assets/images/author.jpg';
 import NFT1 from '@/assets/images/nft/nft-1.jpg';
 import PriceType from '@/components/create-nft/price-types-props';
 
-const BlockchainOptions = [
+const RegionOptions = [
   {
     id: 1,
-    name: 'Ethereum',
-    value: 'ethereum',
-    icon: <Ethereum />,
+    name: 'US-West',
+    value: 'us-west',
   },
   {
     id: 2,
-    name: 'Flow',
-    value: 'flow',
-    icon: <Flow />,
+    name: 'US-East',
+    value: 'us-east',
   },
 ];
 
@@ -43,7 +41,7 @@ export default function CreateNFT() {
   let [explicit, setExplicit] = useState(false);
   let [unlocked, setUnlocked] = useState(false);
   let [priceType, setPriceType] = useState('fixed');
-  let [blockchain, setBlockChain] = useState(BlockchainOptions[0]);
+  let [blockchain, setBlockChain] = useState(RegionOptions[0]);
   let [cpus, setCPUs] = useState('');
   let [ram, setRAM] = useState('');
   let [storage, setStorage] = useState(''); 
@@ -129,7 +127,7 @@ export default function CreateNFT() {
                 leaveTo="opacity-0"
               >
                 <Listbox.Options className="absolute left-0 z-10 mt-1 grid w-full origin-top-right gap-0.5 rounded-lg border border-gray-200 bg-white p-1 shadow-large outline-none dark:border-gray-700 dark:bg-gray-800 xs:p-2">
-                  {BlockchainOptions.map((option) => (
+                  {RegionOptions.map((option) => (
                     <Listbox.Option key={option.id} value={option}>
                       {({ selected }) => (
                         <div

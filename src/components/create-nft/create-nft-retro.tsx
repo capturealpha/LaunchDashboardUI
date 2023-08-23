@@ -19,7 +19,7 @@ import React from 'react';
 import Preview from '@/components/create-nft/nft-preview';
 import PriceType from '@/components/create-nft/price-types-props';
 
-const BlockchainOptions = [
+const RegionOptions = [
   {
     id: 1,
     name: 'Ethereum',
@@ -39,7 +39,7 @@ export default function CreateNFTRetro() {
   const [explicit, setExplicit] = useState(false);
   const [unlocked, setUnlocked] = useState(false);
   const [priceType, setPriceType] = useState('fixed');
-  const [blockchain, setBlockChain] = useState(BlockchainOptions[0]);
+  const [blockchain, setBlockChain] = useState(RegionOptions[0]);
   return (
     <>
       <NextSeo
@@ -185,7 +185,7 @@ export default function CreateNFTRetro() {
                   leaveTo="opacity-0"
                 >
                   <Listbox.Options className="absolute left-0 z-10 mt-1 grid w-full origin-top-right gap-0.5 rounded-lg border border-gray-200 bg-white p-1 shadow-large outline-none dark:border-gray-700 dark:bg-gray-800 xs:p-2">
-                    {BlockchainOptions.map((option) => (
+                    {RegionOptions.map((option) => (
                       <Listbox.Option key={option.id} value={option}>
                         {({ selected }) => (
                           <div
