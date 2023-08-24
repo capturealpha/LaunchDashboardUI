@@ -1,6 +1,9 @@
 import Image from '@/components/ui/image';
+import { LongArrowRight } from '@/components/icons/long-arrow-right';
 import { LongArrowUp } from '@/components/icons/long-arrow-up';
 import { VerifiedIcon } from '@/components/icons/verified-icon';
+import { GasIcon } from '@/components/icons/gas-icon';
+import { QuestionIcon } from '@/components/icons/question-icon';
 import { StaticImageData } from 'next/image';
 
 type DeploymentHistoryCardProps = {
@@ -9,6 +12,7 @@ type DeploymentHistoryCardProps = {
   dateCreated: string;
   status: string;
   price: number;
+  gasFee: number;
 };
 
 export default function DeploymentHistoryCard({ item }: { item: DeploymentHistoryCardProps }) {
@@ -64,7 +68,7 @@ export default function DeploymentHistoryCard({ item }: { item: DeploymentHistor
             </div>
           </div>
           <div className="flex flex-col truncate ltr:ml-2.5 rtl:mr-2.5 xl:ltr:ml-4 xl:rtl:mr-4">
-              <span className="mb-0.5 text-xs text-gray-400">Date Created</span>
+              <span className="mb-0.5 text-xs text-gray-400">Date</span>
               <strong className="truncate font-medium -tracking-wider text-gray-900 dark:text-white">
                 {dateCreated} {/* Assuming the same author for now */}
               </strong>
