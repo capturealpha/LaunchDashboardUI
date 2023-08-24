@@ -30,14 +30,6 @@ export default function DeploymentHistoryCard({ item }: { item: DeploymentHistor
     <div className="rounded-lg bg-white p-4 text-sm shadow-card dark:bg-light-dark sm:p-5 md:p-6">
       <div className="flex items-center justify-between border-b border-dashed border-gray-200 pb-3.5 dark:border-gray-700 sm:pb-5">
         <div className="flex items-center font-medium">
-          <Image
-            src={avatar}
-            alt="wallet"
-            width={24}
-            height={24}
-            placeholder="blur"
-            className="rounded-full"
-          />
           <div className="truncate -tracking-wider text-gray-900 ltr:ml-2 rtl:mr-2 dark:text-white">
             {author}
           </div>
@@ -86,20 +78,8 @@ export default function DeploymentHistoryCard({ item }: { item: DeploymentHistor
         </div>
         <div className="col-span-4 flex flex-col gap-2.5 sm:flex-row sm:gap-x-4 md:flex-col 2xl:flex-row">
           <div className="flex items-center lg:w-1/2">
-            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-600/5 text-gray-600 dark:text-gray-400 md:h-9 md:w-9 xl:h-10 xl:w-10">
-              <GasIcon className="h-4 w-4" />
-            </div>
-            <div className="flex flex-col truncate ltr:ml-2.5 rtl:mr-2.5 xl:ltr:ml-4 xl:rtl:mr-4">
-              <span className="mb-0.5 text-xs text-gray-400">Gas Fee</span>
-              <strong className="font-medium -tracking-wider text-gray-900 dark:text-white">
-                {gasFee} {/* Display gas fee here */}
-              </strong>
-            </div>
           </div>
           <div className="flex items-center lg:w-1/2">
-            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-600/5 text-gray-600 dark:text-gray-400 md:h-9 md:w-9 xl:h-10 xl:w-10">
-              {/* Icon for deployment method */}
-            </div>
             <div className="flex flex-col truncate ltr:ml-2.5 rtl:mr-2.5 xl:ltr:ml-4 xl:rtl:mr-4">
               <span className="mb-0.5 text-xs text-gray-400">Price</span>
               <strong className="font-medium -tracking-wider text-gray-900 dark:text-white">
