@@ -11,7 +11,7 @@ import User5 from '@/assets/images/avatar/6.png';
 
 export const authorData = {
   id: 157896,
-  name: 'Spy Thirtythree',
+  name: 'Nate Bolam',
   user_name: 'NateBolam',
   wallet_key:
     '0x9Af568442868356c7aE834A47614600002545476555555555772d9F5B87e9b',
@@ -26,7 +26,7 @@ export const authorData = {
     thumbnail: AuthorImage,
     original: AuthorImage,
   },
-  bio: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.',
+  bio: 'Experienced data analyst skilled in extracting actionable insights from intricate datasets. Adept at utilizing advanced tools and techniques to drive informed decisions and uncover valuable trends.',
   following: '1,504',
   followers: '1,845',
   followed_by: [
@@ -84,33 +84,33 @@ export const authorData = {
   socials: [
     {
       id: 1,
-      title: '@dontbesovasya',
-      link: 'https://dontbesovasya.io',
+      title: '@natebolam',
+      link: 'https://capturealpha.com',
       icon: <Twitter className="w-4" />,
     },
     {
       id: 2,
-      title: '@dontbesovasya',
-      link: 'https://dontbesovasya.io',
+      title: '@natebolam',
+      link: 'https://capturealpha.com',
       icon: <Facebook className="w-4" />,
     },
     {
       id: 2,
-      title: '@dontbesovasya',
-      link: 'https://dontbesovasya.io',
+      title: '@natebolam',
+      link: 'https://capturealpha.com',
       icon: <Instagram className="w-4" />,
     },
   ],
   links: [
     {
       id: 1,
-      title: '@dontbesovasya',
-      link: 'https://dontbesovasya.io',
+      title: '@natebolam',
+      link: 'https://capturealpha.com',
     },
     {
       id: 2,
-      title: '@dontbesovasya',
-      link: 'https://dontbesovasya.io',
+      title: '@natebolam',
+      link: 'https://capturealpha.com',
     },
   ],
 };
