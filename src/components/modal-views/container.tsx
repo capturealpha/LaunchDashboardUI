@@ -106,7 +106,7 @@ export default function ModalContainer() {
           <div
             className={cn(
               'relative z-50 inline-block w-full text-left align-middle',
-              layout === LAYOUT_OPTIONS.RETRO ? 'sm:w-auto' : 'xs:w-auto'
+              layout === LAYOUT_OPTIONS.MINIMAL ? 'sm:w-auto' : 'xs:w-auto'
             )}
           >
             {view && renderModalContent(view)}

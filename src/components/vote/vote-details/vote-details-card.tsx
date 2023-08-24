@@ -44,8 +44,8 @@ export default function VoteDetailsCard({ vote }: any) {
       <motion.div
         layout
         className={cn('flex w-full flex-col-reverse justify-between ', {
-          'md:grid md:grid-cols-3': layout !== LAYOUT_OPTIONS.RETRO,
-          'lg:grid lg:grid-cols-3': layout === LAYOUT_OPTIONS.RETRO,
+          'md:grid md:grid-cols-3': layout !== LAYOUT_OPTIONS.MINIMAL,
+          'lg:grid lg:grid-cols-3': layout === LAYOUT_OPTIONS.MINIMAL,
         })}
       >
         <div className="self-start md:col-span-2">
@@ -92,9 +92,9 @@ export default function VoteDetailsCard({ vote }: any) {
               "before:content-[' '] relative grid h-full gap-2 before:absolute before:bottom-0 before:border-b before:border-r before:border-dashed before:border-gray-200 ltr:before:left-0 rtl:before:right-0 dark:border-gray-700 dark:before:border-gray-700 xs:gap-2.5 ",
               {
                 'mb-5 pb-5 before:h-[1px] before:w-full md:mb-0 md:pb-0 md:before:h-full md:before:w-[1px] ltr:md:pl-5 rtl:md:pr-5 ltr:xl:pl-3 rtl:xl:pr-3':
-                  layout !== LAYOUT_OPTIONS.RETRO,
+                  layout !== LAYOUT_OPTIONS.MINIMAL,
                 'mb-5 pb-5 before:h-[1px] before:w-full ltr:pl-0 lg:mb-0 lg:pb-0 lg:before:h-full lg:before:w-[1px] ltr:lg:pl-3 rtl:lg:pr-3':
-                  layout === LAYOUT_OPTIONS.RETRO,
+                  layout === LAYOUT_OPTIONS.MINIMAL,
               }
             )}
           >
@@ -180,9 +180,9 @@ export default function VoteDetailsCard({ vote }: any) {
                 shape="rounded"
                 fullWidth={true}
                 className={cn({
-                  'sm:w-4/6 md:w-3/6 xl:w-2/6': layout !== LAYOUT_OPTIONS.RETRO,
+                  'sm:w-4/6 md:w-3/6 xl:w-2/6': layout !== LAYOUT_OPTIONS.MINIMAL,
                   'w-full lg:w-3/6 2xl:w-[48%] 3xl:w-1/3':
-                    layout === LAYOUT_OPTIONS.RETRO,
+                    layout === LAYOUT_OPTIONS.MINIMAL,
                 })}
               >
                 Add POOL token to MetaMask
