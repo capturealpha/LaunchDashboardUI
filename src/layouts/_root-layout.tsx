@@ -10,7 +10,7 @@ const MinimalLayout = dynamic(() => import('@/layouts/_minimal'), {
 const ClassicLayout = dynamic(() => import('@/layouts/_classic'), {
   loading: () => <FallbackLoader />,
 });
-const RetroLayout = dynamic(() => import('@/layouts/_retro'), {
+const MinimalLayout = dynamic(() => import('@/layouts/_retro'), {
   loading: () => <FallbackLoader />,
 });
 const ModernLayout = dynamic(() => import('@/layouts/_modern'), {
@@ -43,7 +43,7 @@ export default function RootLayout({
   // render retro layout
   if (layout === LAYOUT_OPTIONS.MINIMAL) {
     return (
-      <RetroLayout contentClassName={contentClassName}>{children}</RetroLayout>
+      <MinimalLayout contentClassName={contentClassName}>{children}</MinimalLayout>
     );
   }
 

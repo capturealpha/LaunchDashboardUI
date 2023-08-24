@@ -1,4 +1,4 @@
-export function RetroLayoutIcon(props: React.SVGAttributes<{}>) {
+export function MinimalLayoutIcon(props: React.SVGAttributes<{}>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

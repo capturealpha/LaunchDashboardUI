@@ -3,7 +3,7 @@ import Sidebar from '@/layouts/sidebar/_retro-left';
 import SidebarTwo from '@/layouts/sidebar/_retro-right';
 import Header from '@/layouts/header/header';
 
-export default function RetroLayout({
+export default function MinimalLayout({
   children,
   contentClassName,
 }: React.PropsWithChildren<{ contentClassName?: string }>) {

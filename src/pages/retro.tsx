@@ -1,7 +1,7 @@
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { NextSeo } from 'next-seo';
 import type { NextPageWithLayout } from '@/types';
-import RetroLayout from '@/layouts/_retro';
+import MinimalLayout from '@/layouts/_retro';
 import TransactionTable from '@/components/transaction/transaction-table';
 
 //images
@@ -45,7 +45,7 @@ const Retro: NextPageWithLayout<
 };
 
 Retro.getLayout = function getLayout(page) {
-  return <RetroLayout>{page}</RetroLayout>;
+  return <MinimalLayout>{page}</MinimalLayout>;
 };
 
 export default Retro;
