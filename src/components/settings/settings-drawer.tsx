@@ -17,7 +17,7 @@ import { Moon } from '@/components/icons/moon';
 import { LeftAlign } from '@/components/icons/left-align';
 import { RightAlign } from '@/components/icons/right-align';
 import { ModernLayoutIcon } from '@/components/icons/modern-layout-icon';
-import { MinimalLayoutIcon } from '@/components/icons/retro-layout-icon';
+import { RetroLayoutIcon } from '@/components/icons/retro-layout-icon';
 import { MinimalLayoutIcon } from '@/components/icons/minimal-layout-icon';
 import { ClassicLayoutIcon } from '@/components/icons/classic-layout-icon';
 import { useLayout } from '@/lib/hooks/use-layout';
@@ -155,7 +155,7 @@ function DirectionSwitcher() {
 const LayoutIcons = {
   [LAYOUT_OPTIONS.MODERN]: <ModernLayoutIcon />,
   [LAYOUT_OPTIONS.MINIMAL]: <MinimalLayoutIcon />,
-  [LAYOUT_OPTIONS.MINIMAL]: <MinimalLayoutIcon />,
+  [LAYOUT_OPTIONS.RETRO]: <RetroLayoutIcon />,
   [LAYOUT_OPTIONS.CLASSIC]: <ClassicLayoutIcon />,
 };
 

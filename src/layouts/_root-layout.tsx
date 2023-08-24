@@ -10,7 +10,7 @@ const MinimalLayout = dynamic(() => import('@/layouts/_minimal'), {
 const ClassicLayout = dynamic(() => import('@/layouts/_classic'), {
   loading: () => <FallbackLoader />,
 });
-const MinimalLayout = dynamic(() => import('@/layouts/_retro'), {
+const RetroLayout = dynamic(() => import('@/layouts/_retro'), {
   loading: () => <FallbackLoader />,
 });
 const ModernLayout = dynamic(() => import('@/layouts/_modern'), {
