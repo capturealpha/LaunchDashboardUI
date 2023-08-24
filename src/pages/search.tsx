@@ -18,19 +18,6 @@ const SearchPage: NextPageWithLayout<
 > = () => {
   const { layout } = useLayout();
 
-  // render retro layout
-  if (layout === LAYOUT_OPTIONS.MINIMAL) {
-    return (
-      <>
-        <NextSeo
-          title="Launch"
-          description="GPU-Enabled Jupyter Notebook Deployment Platform"
-        />
-        <RetroSearch />
-      </>
-    );
-  }
-
   // render default create NFT component
   return (
     <>
