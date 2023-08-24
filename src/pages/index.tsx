@@ -20,7 +20,7 @@ const HomePage: NextPageWithLayout<
   const { layout } = useLayout();
 
   // render minimal screen/page
-  if (layout === LAYOUT_OPTIONS.MINIMAL) {
+  if (layout === LAYOUT_OPTIONS.RETRO) {
     return <MinimalScreen />;
   }
 
@@ -30,7 +30,7 @@ const HomePage: NextPageWithLayout<
   }
 
   // render retro screen/page
-  if (layout === LAYOUT_OPTIONS.MINIMAL) {
+  if (layout === LAYOUT_OPTIONS.RETRO) {
     return <RetroScreen />;
   }
 

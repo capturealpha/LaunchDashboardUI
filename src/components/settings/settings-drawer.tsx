@@ -154,8 +154,8 @@ function DirectionSwitcher() {
 // Component: LayoutSwitcher
 const LayoutIcons = {
   [LAYOUT_OPTIONS.MODERN]: <ModernLayoutIcon />,
-  [LAYOUT_OPTIONS.MINIMAL]: <MinimalLayoutIcon />,
-  [LAYOUT_OPTIONS.MINIMAL]: <RetroLayoutIcon />,
+  [LAYOUT_OPTIONS.RETRO]: <MinimalLayoutIcon />,
+  [LAYOUT_OPTIONS.RETRO]: <RetroLayoutIcon />,
   [LAYOUT_OPTIONS.CLASSIC]: <ClassicLayoutIcon />,
 };
 

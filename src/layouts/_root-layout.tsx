@@ -36,12 +36,12 @@ export default function RootLayout({
   if (!isMounted) return null;
 
   // render minimal layout
-  if (layout === LAYOUT_OPTIONS.MINIMAL) {
+  if (layout === LAYOUT_OPTIONS.RETRO) {
     return <MinimalLayout>{children}</MinimalLayout>;
   }
 
   // render retro layout
-  if (layout === LAYOUT_OPTIONS.MINIMAL) {
+  if (layout === LAYOUT_OPTIONS.RETRO) {
     return (
       <RetroLayout contentClassName={contentClassName}>{children}</RetroLayout>
     );

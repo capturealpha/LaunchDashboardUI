@@ -23,7 +23,7 @@ const AuthorProfilePage: NextPageWithLayout<
   const { layout } = useLayout();
 
   // render retro layout profile
-  if (layout === LAYOUT_OPTIONS.MINIMAL) {
+  if (layout === LAYOUT_OPTIONS.RETRO) {
     return (
       <>
         <NextSeo

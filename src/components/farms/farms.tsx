@@ -30,7 +30,7 @@ function SortList() {
   return (
     <div className="relative w-full lg:w-auto">
       <Listbox value={selectedItem} onChange={setSelectedItem}>
-        {layout === LAYOUT_OPTIONS.MINIMAL ? (
+        {layout === LAYOUT_OPTIONS.RETRO ? (
           <>
             <Listbox.Button className="hidden h-11 w-full items-center justify-between rounded-lg pr-2 text-sm text-gray-900 dark:text-white lg:flex xl:flex 3xl:hidden">
               <HorizontalThreeDots />
@@ -181,7 +181,7 @@ export default function Farms() {
       <div
         className={cn(
           'mb-6 flex flex-col justify-between gap-4',
-          layout === LAYOUT_OPTIONS.MINIMAL
+          layout === LAYOUT_OPTIONS.RETRO
             ? 'lg:flex-row lg:items-center lg:gap-6'
             : 'md:flex-row md:items-center md:gap-6'
         )}
@@ -190,7 +190,7 @@ export default function Farms() {
           <Status />
           <div
             className={cn(
-              layout === LAYOUT_OPTIONS.MINIMAL ? 'lg:hidden' : 'md:hidden'
+              layout === LAYOUT_OPTIONS.RETRO ? 'lg:hidden' : 'md:hidden'
             )}
           >
             <StackedSwitch />
@@ -201,7 +201,7 @@ export default function Farms() {
           <div
             className={cn(
               'hidden shrink-0 ',
-              layout === LAYOUT_OPTIONS.MINIMAL ? 'lg:block' : 'md:block'
+              layout === LAYOUT_OPTIONS.RETRO ? 'lg:block' : 'md:block'
             )}
           >
             <StackedSwitch />

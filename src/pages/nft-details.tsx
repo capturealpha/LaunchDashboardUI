@@ -21,11 +21,11 @@ const NFTDetailsPage: NextPageWithLayout<
 > = () => {
   const { layout } = useLayout();
 
-  if (layout === LAYOUT_OPTIONS.MINIMAL) {
+  if (layout === LAYOUT_OPTIONS.RETRO) {
     return <MinimalNFTDetails product={nftData} />;
   }
 
-  if (layout === LAYOUT_OPTIONS.MINIMAL) {
+  if (layout === LAYOUT_OPTIONS.RETRO) {
     return <RetroNFTDetails product={nftData} />;
   }
 

@@ -37,7 +37,7 @@ export default function ProfileTab() {
         <div
           className={cn(
             'grid gap-4 xs:grid-cols-2 lg:grid-cols-2 lg:gap-5 xl:gap-6 3xl:grid-cols-3 4xl:grid-cols-4',
-            layout === LAYOUT_OPTIONS.MINIMAL
+            layout === LAYOUT_OPTIONS.RETRO
               ? 'md:grid-cols-2'
               : 'md:grid-cols-1'
           )}
