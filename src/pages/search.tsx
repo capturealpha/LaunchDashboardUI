@@ -26,7 +26,7 @@ const SearchPage: NextPageWithLayout<
           title="Launch"
           description="GPU-Enabled Jupyter Notebook Deployment Platform"
         />
-        <MinimalSearch />
+        <RetroSearch />
       </>
     );
   }
