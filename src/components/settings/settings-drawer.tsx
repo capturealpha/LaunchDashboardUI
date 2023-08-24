@@ -155,7 +155,7 @@ function DirectionSwitcher() {
 const LayoutIcons = {
   [LAYOUT_OPTIONS.MODERN]: <ModernLayoutIcon />,
   [LAYOUT_OPTIONS.MINIMAL]: <MinimalLayoutIcon />,
-  [LAYOUT_OPTIONS.RETRO]: <RetroLayoutIcon />,
+  [LAYOUT_OPTIONS.MINIMAL]: <RetroLayoutIcon />,
   [LAYOUT_OPTIONS.CLASSIC]: <ClassicLayoutIcon />,
 };
 

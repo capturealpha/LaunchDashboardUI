@@ -16,7 +16,7 @@ export default function TopPools({ limit }: TopPoolsProps) {
       className={cn(
         'rounded-lg bg-white p-6 shadow-card dark:bg-light-dark sm:p-8',
         {
-          'w-full lg:w-[49%]': layout === LAYOUT_OPTIONS.RETRO,
+          'w-full lg:w-[49%]': layout === LAYOUT_OPTIONS.MINIMAL,
         }
       )}
     >

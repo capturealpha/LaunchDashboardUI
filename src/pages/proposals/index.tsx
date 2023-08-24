@@ -93,9 +93,9 @@ const ProposalsPage: NextPageWithLayout = () => {
             'mb-8 flex flex-col gap-4 rounded-lg bg-white p-5 py-6 shadow-card dark:bg-light-dark xs:p-6 ',
             {
               'sm:flex-row sm:items-center sm:justify-between':
-                layout !== LAYOUT_OPTIONS.RETRO,
+                layout !== LAYOUT_OPTIONS.MINIMAL,
               'lg:flex-row lg:items-center lg:justify-between':
-                layout === LAYOUT_OPTIONS.RETRO,
+                layout === LAYOUT_OPTIONS.MINIMAL,
             }
           )}
         >

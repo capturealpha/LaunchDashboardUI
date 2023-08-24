@@ -25,7 +25,7 @@ const NFTDetailsPage: NextPageWithLayout<
     return <MinimalNFTDetails product={nftData} />;
   }
 
-  if (layout === LAYOUT_OPTIONS.RETRO) {
+  if (layout === LAYOUT_OPTIONS.MINIMAL) {
     return <RetroNFTDetails product={nftData} />;
   }
 

@@ -30,7 +30,7 @@ const HomePage: NextPageWithLayout<
   }
 
   // render retro screen/page
-  if (layout === LAYOUT_OPTIONS.RETRO) {
+  if (layout === LAYOUT_OPTIONS.MINIMAL) {
     return <RetroScreen />;
   }
 
