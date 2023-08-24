@@ -79,7 +79,7 @@ export default function MinimalNFTDetails({
                 href={minted_slug}
                 className="mt-1.5 inline-flex items-center text-sm -tracking-wider text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white xl:mt-2.5"
               >
-                Minted on {minted_date}
+                Deployed on {minted_date}
                 <ArrowLinkIcon className="h-3 w-3 ltr:ml-2 rtl:mr-2" />
               </AnchorLink>
               <div className="mt-4 flex flex-wrap gap-6 pt-0.5 lg:-mx-6 lg:mt-6 lg:gap-0">
@@ -90,17 +90,6 @@ export default function MinimalNFTDetails({
                   <AnchorLink href={creator?.slug} className="inline-flex">
                     <ListCard
                       item={creator}
-                      className="rounded-full p-2 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                    />
-                  </AnchorLink>
-                </div>
-                <div className="shrink-0 lg:px-6">
-                  <h3 className="text-heading-style mb-2.5 uppercase text-gray-900 dark:text-white">
-                    Collection
-                  </h3>
-                  <AnchorLink href="#" className="inline-flex">
-                    <ListCard
-                      item={collection}
                       className="rounded-full p-2 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                     />
                   </AnchorLink>
