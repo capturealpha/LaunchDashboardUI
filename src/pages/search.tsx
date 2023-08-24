@@ -19,7 +19,7 @@ const SearchPage: NextPageWithLayout<
   const { layout } = useLayout();
 
   // render retro layout
-  if (layout === LAYOUT_OPTIONS.RETRO) {
+  if (layout === LAYOUT_OPTIONS.MINIMAL) {
     return (
       <>
         <NextSeo
