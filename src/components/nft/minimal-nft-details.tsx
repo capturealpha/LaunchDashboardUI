@@ -103,14 +103,6 @@ export default function MinimalNFTDetails({
                     title: 'Details',
                     path: 'details',
                   },
-                  {
-                    title: 'Bids',
-                    path: 'bids',
-                  },
-                  {
-                    title: 'History',
-                    path: 'history',
-                  },
                 ]}
               >
                 <TabPanel className="focus:outline-none">
@@ -123,78 +115,8 @@ export default function MinimalNFTDetails({
                         {description}
                       </div>
                     </div>
-                    <div className="block">
-                      <h3 className="text-heading-style mb-2 uppercase text-gray-900 dark:text-white">
-                        Owner
-                      </h3>
-                      <AnchorLink href={owner?.slug} className="inline-block">
-                        <ListCard
-                          item={owner}
-                          className="rounded-full p-2 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                        />
-                      </AnchorLink>
                     </div>
-                    <div className="block">
-                      <h3 className="text-heading-style mb-2 uppercase text-gray-900 dark:text-white">
-                        Block Chain
-                      </h3>
-                      <div className="flex flex-col gap-2">
-                        {block_chains?.map((item: any) => (
-                          <AnchorLink
-                            href="#"
-                            className="inline-flex"
-                            key={item?.id}
-                          >
-                            <ListCard
-                              item={item}
-                              className="rounded-full p-2 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                            />
-                          </AnchorLink>
-                        ))}
-                      </div>
                     </div>
-                  </div>
-                </TabPanel>
-                <TabPanel className="focus:outline-none">
-                  <div className="flex flex-col-reverse">
-                    {nftData?.bids?.map((bid) => (
-                      <FeaturedCard
-                        item={bid}
-                        key={bid?.id}
-                        className="mb-3 first:mb-0"
-                      />
-                    ))}
-                  </div>
-                </TabPanel>
-                <TabPanel className="focus:outline-none">
-                  <div className="flex flex-col-reverse">
-                    {nftData?.history?.map((item) => (
-                      <FeaturedCard
-                        item={item}
-                        key={item?.id}
-                        className="mb-3 first:mb-0"
-                      />
-                    ))}
-                  </div>
-                </TabPanel>
-              </ParamTab>
-            </div>
-          </div>
-          <NftFooter
-            className="hidden md:block"
-            currentBid={nftData?.bids[nftData?.bids?.length - 1]}
-            auctionTime={Date.now() + 4000000 * 10}
-            isAuction={isAuction}
-            price={price}
-          />
-        </div>
-        <NftFooter
-          currentBid={nftData?.bids[nftData?.bids?.length - 1]}
-          auctionTime={Date.now() + 4000000 * 10}
-          isAuction={isAuction}
-          price={price}
-        />
-      </div>
-    </div>
+
   );
 }
