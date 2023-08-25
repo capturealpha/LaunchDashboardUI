@@ -36,6 +36,19 @@ const RegionOptions = [
   },
 ];
 
+const GPUOptions = [
+  {
+    id: 1,
+    name: 'US-West',
+    value: 'us-west',
+  },
+  {
+    id: 2,
+    name: 'US-East',
+    value: 'us-east',
+  },
+];
+
 export default function CreateNFT() {
   let [publish, setPublish] = useState(true);
   let [explicit, setExplicit] = useState(false);
@@ -108,6 +121,46 @@ export default function CreateNFT() {
         <Input type="number" placeholder="Enter storage" onChange={(e) => setStorage(e.target.value)} />
       </div>
 
+{/* GPU */}
+<div className="mb-8">
+          <InputLabel title="GPU" />
+          <div className="relative">
+            <Listbox value={blockchain} onChange={setBlockChain}>
+              <Listbox.Button className="text-case-inherit letter-space-inherit flex h-10 w-full items-center justify-between rounded-lg border border-gray-200 bg-white px-4 text-sm font-medium text-gray-900 outline-none transition-shadow duration-200 hover:border-gray-900 hover:ring-1 hover:ring-gray-900 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-100 dark:hover:border-gray-600 dark:hover:ring-gray-600 sm:h-12 sm:px-5">
+                <div className="flex items-center">
+                  <span className="ltr:mr-2 rtl:ml-2">{blockchain.icon}</span>
+                  {blockchain.name}
+                </div>
+                <ChevronDown />
+              </Listbox.Button>
+              <Transition
+                leave="transition ease-in duration-100"
+                leaveFrom="opacity-100"
+                leaveTo="opacity-0"
+              >
+                <Listbox.Options className="absolute left-0 z-10 mt-1 grid w-full origin-top-right gap-0.5 rounded-lg border border-gray-200 bg-white p-1 shadow-large outline-none dark:border-gray-700 dark:bg-gray-800 xs:p-2">
+                  {GPUOptions.map((option) => (
+                    <Listbox.Option key={option.id} value={option}>
+                      {({ selected }) => (
+                        <div
+                          className={`flex cursor-pointer items-center rounded-md px-3 py-2 text-sm text-gray-900 transition dark:text-gray-100  ${
+                            selected
+                              ? 'bg-gray-200/70 font-medium dark:bg-gray-600/60'
+                              : 'hover:bg-gray-100 dark:hover:bg-gray-700/70'
+                          }`}
+                        >
+                          <span className="ltr:mr-2 rtl:ml-2">
+                          </span>
+                          {option.name}
+                        </div>
+                      )}
+                    </Listbox.Option>
+                  ))}
+                </Listbox.Options>
+              </Transition>
+            </Listbox>
+          </div>
+        </div>
 
         {/* Blockchain */}
         <div className="mb-8">
